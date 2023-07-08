@@ -21,7 +21,7 @@ class App extends Component {
 
   getData = () => {
     this.setState({ errorMessage: "", loading: true })
-    fetch('http://192.168.1.127:8000/api/employees', {
+    fetch('http://localhost:8000/api/employees', {
       method: "GET"
     })
       .then(res => res.json())

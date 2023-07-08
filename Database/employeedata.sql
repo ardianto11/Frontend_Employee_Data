@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 08, 2023 at 01:07 PM
+-- Generation Time: Jul 08, 2023 at 01:43 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.0.25
 
@@ -36,13 +36,6 @@ CREATE TABLE `employees` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
-
---
--- Dumping data for table `employees`
---
-
-INSERT INTO `employees` (`id`, `name`, `address`, `nip`, `photo`, `created_at`, `updated_at`) VALUES
-(48, 'Ted', 'Tes', 123, 'http://192.168.1.127:8000/upload/1688807644photo.jpg', '2023-07-08 09:14:04', '2023-07-08 09:14:04');
 
 --
 -- Indexes for dumped tables

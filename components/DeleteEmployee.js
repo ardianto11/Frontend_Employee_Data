@@ -26,7 +26,7 @@ class DeleteEmployee extends Component {
 
       getData = () => {
     this.setState({ errorMessage: "", loading: true })
-    fetch('http://192.168.1.127:8000/api/employees', {
+    fetch('http://localhost:8000/api/employees', {
       method: "GET"
     })
       .then(res => res.json())
@@ -45,7 +45,7 @@ class DeleteEmployee extends Component {
         this.setState({ errorMessage: "", loading: true });
 
         // selected employee is updated with employee id
-        fetch(`http://192.168.1.127:8000/api/employees/delete/${this.props.selectedEmployee.id}`, {
+        fetch(`http://localhost:8000/api/employees/delete/${this.props.selectedEmployee.id}`, {
             method: "DELETE"
         })
             .then(res => res.json())

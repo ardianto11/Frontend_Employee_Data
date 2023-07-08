@@ -43,7 +43,7 @@ class EditEmployee extends Component {
 
         if (name && address && nip && photo) {
             // selected employee is updated with employee id
-            fetch(`http://192.168.1.127:8000/api/employees/${this.props.selectedEmployee.id}`, {
+            fetch(`http://localhost:8000/api/employees/${this.props.selectedEmployee.id}`, {
                 method: "PUT",
                 headers: {
                     "Accept": "application/json",

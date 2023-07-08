@@ -72,7 +72,7 @@ class CreateEmployee extends Component {
         type: 'image/jpeg',
       });
 
-      fetch('http://192.168.1.127:8000/api/employees/create', {
+      fetch('http://localhost:8000/api/employees/create', {
         method: 'POST',
         body: formData,
       })
